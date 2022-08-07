@@ -1,18 +1,28 @@
-// pages/index/index.js
+// pages/shop/shop.js
+import ShopModel from "../../model/shop"
 Page({
+  /**
+   * 调用轮播图接口方法
+   */
+  async getBanner(){
+    const response = await ShopModel.getShopBanner()
+    this.setData({
+      bannerData : response.data
+    })
+  },
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    bannerData : []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    this.getBanner()
   },
 
   /**

@@ -1,4 +1,4 @@
-// pages/index/index.js
+// pages/every/every.js
 Page({
 
   /**
