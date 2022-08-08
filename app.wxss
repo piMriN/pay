@@ -4,4 +4,9 @@ page{
 }
 .container{
   height : 100%;
+  background-color: #fefefe;
+}
+image{
+  width: 100%;
+  height: 100%;
 }

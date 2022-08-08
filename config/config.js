@@ -7,4 +7,17 @@ const APIConfig = {
   }
 }
 
-export {APIConfig}
+// 路径白名单
+const pathWhiteList = [
+  "/login",
+  "/404",
+  "/401",
+  "/settings"
+]
+
+const field = {
+  loginCredentials : "token",
+  userInfokey:"userInfo"
+}
+
+export {APIConfig,pathWhiteList,field}
