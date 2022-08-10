@@ -1,3 +1,4 @@
+import {field} from "../config/config"
 class Storage {
   /**
    * 设置本地存储的数据
@@ -13,7 +14,7 @@ class Storage {
    * @param {*} key 
    */
   static get(key){
-    return wx.getStorageSync(key)
+    return wx.getStorageSync(key) || ""
   }
 
   /**

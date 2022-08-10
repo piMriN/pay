@@ -4,7 +4,11 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    status :Boolean,
+    count : {
+      type : Number,
+      value : 0
+    }
   },
 
   /**
